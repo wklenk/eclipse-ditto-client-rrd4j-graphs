@@ -1,0 +1,8 @@
+ditto-client:
+  authentication:
+    clientId: your-client-id
+    clientSecret: your-client-secret
+    scopes: your-scope-1, your-scope-2
+    tokenEndpoint: https://access.bosch-iot-suite.com/token
+
+  webServiceEndpoint: wss://things.eu-1.bosch-iot-suite.com
