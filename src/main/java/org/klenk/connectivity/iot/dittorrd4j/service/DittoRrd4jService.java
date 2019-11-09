@@ -77,8 +77,8 @@ public class DittoRrd4jService {
 
         graphDef.datasource(DS_TOTAL_BYTES_SENT, RRDPATH, DS_TOTAL_BYTES_SENT, ConsolFun.AVERAGE);
         graphDef.datasource(DS_TOTAL_BYTES_RECEIVED, RRDPATH, DS_TOTAL_BYTES_RECEIVED, ConsolFun.AVERAGE);
-        graphDef.stack(DS_TOTAL_BYTES_SENT, new Color(0, 0xFF, 0), "Bytes sent");
-        graphDef.stack(DS_TOTAL_BYTES_RECEIVED, new Color(0, 0, 0xFF), "Bytes received");
+        graphDef.area(DS_TOTAL_BYTES_SENT, new Color(0, 0xFF, 0), "Bytes sent");
+        graphDef.area(DS_TOTAL_BYTES_RECEIVED, new Color(0, 0, 0xFF), "Bytes received");
 
         graphDef.comment("\\r");
 
